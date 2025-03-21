@@ -49,7 +49,10 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManufacture
                                     `}
                                     value={item}
                                 >
-                                    {item}
+                                    {({selected, active}) => {
+                                        <>
+                                            
+                                        </>}}
                                 </ComboboxOption>
                         ))}
                     </ComboboxOptions>
