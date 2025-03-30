@@ -1,3 +1,5 @@
+I cloned the web app with an inspiration from YouTube, Focusing on tiny parts of code to learn more about React, Next JS, TypeScript and other technologies used.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
