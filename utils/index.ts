@@ -6,7 +6,7 @@ export async function fetchCars() {
         'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
     }
 
-    const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=carrera',
+    const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=q3',
         {headers: headers,});
 
     const result = await response.json();
@@ -33,7 +33,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
     const url = new URL('https://cdn.imagin.studio/getimage');
     const { make, model, year } = car;
 
-    url.searchParams.append('customer', 'hrjavascript-mastery');
+    url.searchParams.append('customer', 'img');
     url.searchParams.append('make', make);
     url.searchParams.append('modelFamily', model.split(' ')[0]);
     url.searchParams.append('zoomType', 'fullscreen');
