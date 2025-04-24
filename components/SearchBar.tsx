@@ -4,6 +4,7 @@ import SearchManufacturer from "./SearchManufacturer";
 import { useState } from "react";
 import Image from "next/image";
 
+
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => {
   <button type="submit" className={`-ml-3 z-10 ${otherClasses}`}>
     <Image
@@ -44,7 +45,9 @@ const SearchBar = () => {
               placeholder="Tiguan"
               className="searchbar__input"
             />
+            <SearchButton otherClasses="sm:hidden" />
         </div>
+        <SearchButton otherClasses="max-sm:hidden" />
     </form>
   )
 }
